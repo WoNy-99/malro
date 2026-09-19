@@ -1,0 +1,20 @@
+plugins {
+    id 'com.android.application'
+}
+
+android {
+    namespace 'com.example.malro'
+
+    defaultConfig {
+        applicationId 'com.example.malro'
+        buildConfigField 'String', 'Google_STT_KEY', '\"' + project.findProperty('Google_STT_KEY', '') + '\"'
+        buildConfigField 'String', 'Fluent_STT_KEY', '\"' + project.findProperty('Fluent_STT_KEY', '') + '\"'
+        buildConfigField 'String', 'THEFLUENT_BASE', '\"' + project.findProperty('THEFLUENT_BASE', '') + '\"'
+        buildConfigField 'String', 'THEFLUENT_AUTH_HEADER', '\"' + project.findProperty('THEFLUENT_AUTH_HEADER', 'Authorization') + '\"'
+        buildConfigField 'String', 'THEFLUENT_AUTH_PREFIX', '\"' + project.findProperty('THEFLUENT_AUTH_PREFIX', 'Bearer ') + '\"'
+        buildConfigField 'String', 'AZURE_ENDPOINT', '\"' + project.findProperty('AZURE_ENDPOINT', '') + '\"'
+        buildConfigField 'String', 'AZURE_KEY', '\"' + project.findProperty('AZURE_KEY', '') + '\"'
+        buildConfigField 'String', 'AZURE_REGION', '\"' + project.findProperty('AZURE_REGION', '') + '\"'
+    }
+}
+

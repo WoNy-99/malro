@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 스피너에 표시될 항목들 -->
+    <string-array name="language_list">
+        <item>Korean</item>
+        <item>English</item>
+        <item>Japanese</item>
+        <item>Chinese</item>
+    </string-array>
+</resources>

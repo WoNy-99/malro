@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nav_study"
+        android:icon="@drawable/ic_learn_active"
+        android:title="학습" />
+
+    <item
+        android:id="@+id/nav_main"
+        android:icon="@drawable/ic_main_inactive"
+        android:title="메인" />
+
+    <item
+        android:id="@+id/nav_translate"
+        android:icon="@drawable/ic_translate_inactive"
+        android:title="번역" />
+
+</menu>

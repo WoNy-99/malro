@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.malro">
+
+    <!-- 권한: 반드시 manifest의 직속 자식 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+
+    <application
+        android:name=".MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Malro">
+        <!-- MyApplication을 쓰지 않으면 위 android:name 속성은 삭제해도 됩니다 -->
+
+    <!-- 런처 액티비티 -->
+    <activity
+        android:name=".LoginActivity"
+        android:exported="true">
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+    </activity>
+
+    <!-- 실제 존재하는 화면들만 선언 -->
+    <activity android:name=".MainActivity" />
+    <activity android:name=".StudyStartActivity" />
+
+    <!-- 발음 학습/피드백 -->
+    <activity android:name=".StudyPronunciationActivity" />
+    <activity android:name=".StudyFeedbackActivity" />
+    <activity android:name=".TodayPronunciationActivity" />
+    <activity android:name=".TodayStudyFeedbackActivity" />
+
+    <!-- 번역 플로우 -->
+    <activity
+        android:name=".TranslateActivity"
+        android:exported="false"
+        android:theme="@style/Theme.Malro" />
+    <activity android:name=".TranslatePronunciationActivity" />
+    <activity android:name=".TranslateFeedbackActivity" />
+    <activity android:name=".TranslateStudyActivity" />
+    <activity android:name=".ArchiveTranslationActivity" />
+
+    <!-- 설명(튜토리얼) 화면들 -->
+    <activity android:name=".ExplainArActivity" />
+    <activity android:name=".ExplainRecordActivity" />
+    <activity android:name=".ExplainStudyActivity" />
+    <activity android:name=".ExplainTransActivity" />
+
+    <!-- 기타 -->
+    <activity android:name=".RecordActivity" />
+</application>
+
+    </manifest>

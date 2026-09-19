@@ -1,0 +1,9 @@
+Google_STT_KEY=replace_me
+Fluent_STT_KEY=replace_me
+THEFLUENT_BASE=https://api.example.invalid
+THEFLUENT_AUTH_HEADER=Authorization
+THEFLUENT_AUTH_PREFIX=Bearer 
+AZURE_ENDPOINT=https://your-resource.cognitiveservices.azure.com/
+AZURE_KEY=replace_me
+AZURE_REGION=koreacentral
+

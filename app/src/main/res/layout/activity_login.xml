@@ -1,0 +1,18 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="match_parent" android:background="#FFFFFF">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical" android:padding="24dp" android:gravity="center_horizontal" android:weightSum="1">
+        <!--  앱 이름  -->
+        <TextView android:id="@+id/brand" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Malro" android:textSize="28sp" android:textStyle="bold" android:layout_marginTop="64dp" android:layout_marginBottom="32dp"/>
+        <!--  제목  -->
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="계정 만들기" android:textSize="20sp" android:textStyle="bold" android:layout_marginBottom="8dp"/>
+        <!--  설명  -->
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="학습 내용을 저장하시려면 로그인이 필요합니다" android:textSize="14sp" android:textColor="#666666" android:layout_marginBottom="40dp"/>
+        <!--  카카오 로그인 버튼  -->
+        <com.google.android.material.button.MaterialButton android:id="@+id/btnKakaoLogin" android:layout_width="match_parent" android:layout_height="48dp" android:backgroundTint="#FFEB00" android:text="카카오 계정으로 계속하기" android:textColor="#000000" android:textSize="14sp" app:icon="@drawable/kakao_login" app:iconSize="20dp" app:iconPadding="12dp" app:iconGravity="textStart" app:iconTint="@null"/>
+        <!--  게스트 로그인 버튼  -->
+        <com.google.android.material.button.MaterialButton android:id="@+id/btnGuestLogin" android:layout_width="match_parent" android:layout_height="48dp" android:backgroundTint="#F3EDF7" android:text="Guest" android:textColor="#000000" android:textSize="20sp" app:iconSize="32dp" app:icon="@drawable/topbar_user" app:iconPadding="12dp" app:iconGravity="textStart" app:iconTint="@null"/>
+        <!--  여백용 View (화면 아래로 밀기용)  -->
+        <View android:layout_width="match_parent" android:layout_height="300dp" android:layout_weight="1"/>
+        <!--  약관 동의 문구  -->
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="32dp" android:text="계속을 클릭하면 당사의 서비스 이용 약관 및 개인정보 처리방침에 동의하는 것으로 간주됩니다." android:textColor="#888888" android:textSize="12sp"/>
+    </LinearLayout>
+</ScrollView>
